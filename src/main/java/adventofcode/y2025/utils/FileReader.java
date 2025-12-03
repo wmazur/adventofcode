@@ -16,5 +16,12 @@ public class FileReader {
         return new ArrayList<>(Files.readAllLines(file.toPath()));
     }
 
+    public static String[] splitOn(String string){
+        return splitOn(string, ",");
+    }
+
+    public static String[] splitOn(String string, String separator){
+        return string.split(separator);
+    }
 
 }

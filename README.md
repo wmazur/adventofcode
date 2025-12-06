@@ -1,6 +1,8 @@
 # simple-app
 
-Minimal Maven Java project (Java 11) created for Advent of Code.
+All puzzles from: https://adventofcode.com/
+
+Minimal Maven Java project (Java 21) created for Advent of Code.
 
 Build and run (PowerShell):
 

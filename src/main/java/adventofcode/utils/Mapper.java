@@ -1,6 +1,8 @@
 package adventofcode.utils;
 
 
+import java.util.List;
+
 public class Mapper {
 
 
@@ -18,6 +20,10 @@ public class Mapper {
             output.append(r).append(' ');
         }
         return output.toString();
+    }
+
+    public static List<String> fromMultilineStringToListOfStrings(String input){
+        return List.of(input.split("\n"));
     }
 
     public static Matrix<Character> fromMultilineStringToChars(String input) {

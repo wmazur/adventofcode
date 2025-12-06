@@ -6,6 +6,6 @@ public class App {
     }
 
     public static String greeting() {
-        return "Hello, Advent of Code!";
+        return "This is not an App you are looking for!";
     }
 }

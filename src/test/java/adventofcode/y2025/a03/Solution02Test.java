@@ -9,22 +9,22 @@ import java.util.List;
 
 import static adventofcode.y2025.utils.FileReader.readFile;
 import static adventofcode.y2025.utils.FileReader.splitOnDigits;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Solution01Test {
+class Solution02Test {
 
-    private final Solution01 solution01 = new Solution01(2);
-    int numberOfDigits = 2;
+    private final Solution01 solution01 = new Solution01(12);
+    int numberOfDigits = 12;
 
     @ParameterizedTest
     @CsvSource({
-            "987654321111111,98",
-            "811111111111119,89",
-            "234234234234278,78",
-            "818181911112111, 92",
-            "99818181911112111, 99",
+            "987654321111111, 987654321111",
+            "811111111111119, 811111111119",
+            "234234234234278, 434234234278",
+            "818181911112111, 888911112111",
+            "998181819111121, 998181819121",
     })
-    public void testPart(String stringInput, int expectedResult){
+    public void testPart(String stringInput, long expectedResult){
         var input = splitOnDigits(stringInput);
 
         var solver = new SolveOneArray(input, numberOfDigits);
@@ -43,13 +43,13 @@ class Solution01Test {
                 "818181911112111"
         );
         var result = solution01.solve(input);
-        assertEquals(357, result);
+        assertEquals(3121910778619L, result);
     }
 
     @Test
-    public void test01() throws IOException {
+    public void test02() throws IOException {
         List<String> input = readFile("src/test/java/adventofcode/y2025/a03/input.txt");
         var result = solution01.solve(input);
-        assertEquals(17155, result);
+        assertEquals(169685670469164L, result);
     }
 }

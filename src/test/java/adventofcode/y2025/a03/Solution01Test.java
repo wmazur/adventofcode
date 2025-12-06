@@ -7,8 +7,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 import java.io.IOException;
 import java.util.List;
 
-import static adventofcode.y2025.utils.FileReader.readFile;
-import static adventofcode.y2025.utils.FileReader.splitOnDigits;
+import static adventofcode.utils.FileReader.readFile;
+import static adventofcode.utils.FileReader.splitOnDigits;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution01Test {

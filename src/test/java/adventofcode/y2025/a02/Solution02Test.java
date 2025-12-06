@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import static adventofcode.y2025.utils.FileReader.readFile;
-import static adventofcode.y2025.utils.FileReader.splitOn;
+import static adventofcode.utils.FileReader.readFile;
+import static adventofcode.utils.FileReader.splitOn;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution02Test extends SolutionUtils{

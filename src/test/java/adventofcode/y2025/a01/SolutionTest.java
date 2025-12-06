@@ -1,6 +1,6 @@
-package adventofcode.y2025.advent01;
+package adventofcode.y2025.a01;
 
-import static adventofcode.y2025.utils.FileReader.readFile;
+import static adventofcode.utils.FileReader.readFile;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.IOException;

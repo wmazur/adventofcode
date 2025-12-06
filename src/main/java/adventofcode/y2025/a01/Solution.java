@@ -1,4 +1,4 @@
-package adventofcode.y2025.advent01;
+package adventofcode.y2025.a01;
 
 import java.util.List;
 import java.util.regex.Matcher;

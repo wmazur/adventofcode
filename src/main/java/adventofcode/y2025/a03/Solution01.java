@@ -2,7 +2,7 @@ package adventofcode.y2025.a03;
 
 import java.util.List;
 
-import static adventofcode.y2025.utils.FileReader.splitOnDigits;
+import static adventofcode.utils.FileReader.splitOnDigits;
 
 public class Solution01 {
 

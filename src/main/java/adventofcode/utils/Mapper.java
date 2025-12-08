@@ -31,7 +31,11 @@ public class Mapper {
     }
 
     public static Matrix<Character> fromStringsToChars(String[] input) {
-        var arrays = new Character[input.length][];
+        return fromListToMatrix(List.of(input));
+    }
+
+    public static Matrix<Character> fromListToMatrix(List<String> input) {
+        var arrays = new Character[input.size()][];
         int rownum = 0;
         for (String s : input) {
             var row = new Character[s.length()];
